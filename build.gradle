@@ -12,11 +12,11 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'idea'
 
-mainClassName = 'dictation.Main'
+mainClassName = 'dictation.App'
 
 jar {
     manifest {
-        attributes 'Main-Class': 'dictation.Main'
+        attributes 'Main-Class': 'dictation.App'
     }
     baseName = 'sl-dictation'
     version =  '0.1.0-SNAPSHOT'

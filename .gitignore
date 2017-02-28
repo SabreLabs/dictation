@@ -39,3 +39,4 @@ gradle/wrapper/gradle-wrapper.properties
 dictation.iml
 dictation.ipr
 dictation.iws
+.idea/
