@@ -6,9 +6,24 @@
  * user guide available at https://docs.gradle.org/3.4/userguide/tutorial_java_projects.html
  */
 
-/*
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+mainClassName = 'dictation.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'dictation.Main'
+    }
+    baseName = 'sl-dictation'
+    version =  '0.1.0-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -28,4 +43,4 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 }
-*/
+
